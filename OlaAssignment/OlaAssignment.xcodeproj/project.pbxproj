@@ -17,7 +17,6 @@
 		50166678238A72E9002CA4F6 /* OlaAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50166677238A72E9002CA4F6 /* OlaAssignmentTests.swift */; };
 		50166690238A7340002CA4F6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50166687238A7340002CA4F6 /* Result.swift */; };
 		50166691238A7340002CA4F6 /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50166688238A7340002CA4F6 /* ErrorResult.swift */; };
-		50166692238A7340002CA4F6 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016668A238A7340002CA4F6 /* NetworkingError.swift */; };
 		50166693238A7340002CA4F6 /* WebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016668B238A7340002CA4F6 /* WebServiceProtocol.swift */; };
 		50166694238A7340002CA4F6 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016668C238A7340002CA4F6 /* WebService.swift */; };
 		50166696238A7340002CA4F6 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016668F238A7340002CA4F6 /* APIManager.swift */; };
@@ -60,7 +59,6 @@
 		50166679238A72E9002CA4F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50166687238A7340002CA4F6 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		50166688238A7340002CA4F6 /* ErrorResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
-		5016668A238A7340002CA4F6 /* NetworkingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 		5016668B238A7340002CA4F6 /* WebServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceProtocol.swift; sourceTree = "<group>"; };
 		5016668C238A7340002CA4F6 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		5016668F238A7340002CA4F6 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -184,7 +182,6 @@
 		50166689238A7340002CA4F6 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				5016668A238A7340002CA4F6 /* NetworkingError.swift */,
 				5016668B238A7340002CA4F6 /* WebServiceProtocol.swift */,
 				5016668C238A7340002CA4F6 /* WebService.swift */,
 			);
@@ -393,7 +390,6 @@
 				501666C6238A7A53002CA4F6 /* WeatherListViewModel.swift in Sources */,
 				5016665E238A72E7002CA4F6 /* AppDelegate.swift in Sources */,
 				501666BA238A76E2002CA4F6 /* WeatherListViewController.swift in Sources */,
-				50166692238A7340002CA4F6 /* NetworkingError.swift in Sources */,
 				501666B8238A7622002CA4F6 /* ManagedObject+Utilities.swift in Sources */,
 				501666B0238A7622002CA4F6 /* WeatherInfo+Model.swift in Sources */,
 				50166693238A7340002CA4F6 /* WebServiceProtocol.swift in Sources */,

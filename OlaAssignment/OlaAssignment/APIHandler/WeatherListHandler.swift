@@ -10,7 +10,7 @@ import UIKit
 
 class WeatherListHandler: WeatherListHandlerProtocol {
     
-    private let webService: WebServiceProtocol!
+    private let webService: WebServiceProtocol
     
     init(webService: WebServiceProtocol = WebService()) {
         self.webService = webService
