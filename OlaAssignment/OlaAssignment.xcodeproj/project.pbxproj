@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5016665E238A72E7002CA4F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016665D238A72E7002CA4F6 /* AppDelegate.swift */; };
+		50166660238A72E7002CA4F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016665F238A72E7002CA4F6 /* SceneDelegate.swift */; };
+		50166662238A72E7002CA4F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50166661238A72E7002CA4F6 /* ViewController.swift */; };
+		50166665238A72E7002CA4F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50166663238A72E7002CA4F6 /* Main.storyboard */; };
+		50166668238A72E7002CA4F6 /* OlaAssignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50166666238A72E7002CA4F6 /* OlaAssignment.xcdatamodeld */; };
+		5016666A238A72E9002CA4F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50166669238A72E9002CA4F6 /* Assets.xcassets */; };
+		5016666D238A72E9002CA4F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5016666B238A72E9002CA4F6 /* LaunchScreen.storyboard */; };
+		50166678238A72E9002CA4F6 /* OlaAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50166677238A72E9002CA4F6 /* OlaAssignmentTests.swift */; };
+		50166690238A7340002CA4F6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50166687238A7340002CA4F6 /* Result.swift */; };
+		50166691238A7340002CA4F6 /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50166688238A7340002CA4F6 /* ErrorResult.swift */; };
+		50166692238A7340002CA4F6 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016668A238A7340002CA4F6 /* NetworkingError.swift */; };
+		50166693238A7340002CA4F6 /* WebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016668B238A7340002CA4F6 /* WebServiceProtocol.swift */; };
+		50166694238A7340002CA4F6 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016668C238A7340002CA4F6 /* WebService.swift */; };
+		50166696238A7340002CA4F6 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016668F238A7340002CA4F6 /* APIManager.swift */; };
+		5016669B238A74E1002CA4F6 /* WeatherListHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016669A238A74E1002CA4F6 /* WeatherListHandlerProtocol.swift */; };
+		501666AF238A7622002CA4F6 /* WeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016669D238A7621002CA4F6 /* WeatherDetail.swift */; };
+		501666B0238A7622002CA4F6 /* WeatherInfo+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016669F238A7621002CA4F6 /* WeatherInfo+Model.swift */; };
+		501666B1238A7622002CA4F6 /* WeatherInfo+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501666A0238A7621002CA4F6 /* WeatherInfo+Parser.swift */; };
+		501666B4238A7622002CA4F6 /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501666A5238A7621002CA4F6 /* Double+Round.swift */; };
+		501666B5238A7622002CA4F6 /* WeatherTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501666A8238A7621002CA4F6 /* WeatherTableCell.swift */; };
+		501666B8238A7622002CA4F6 /* ManagedObject+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501666AE238A7622002CA4F6 /* ManagedObject+Utilities.swift */; };
+		501666BA238A76E2002CA4F6 /* WeatherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501666B9238A76E2002CA4F6 /* WeatherListViewController.swift */; };
+		501666BC238A77A6002CA4F6 /* WeatherListViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501666BB238A77A6002CA4F6 /* WeatherListViewDatasource.swift */; };
+		501666C2238A7999002CA4F6 /* WeatherListHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501666C1238A7999002CA4F6 /* WeatherListHandler.swift */; };
+		501666C4238A7A02002CA4F6 /* WeatherListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501666C3238A7A02002CA4F6 /* WeatherListViewInterface.swift */; };
+		501666C6238A7A53002CA4F6 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501666C5238A7A53002CA4F6 /* WeatherListViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50166674238A72E9002CA4F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50166652238A72E7002CA4F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50166659238A72E7002CA4F6;
+			remoteInfo = OlaAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5016665A238A72E7002CA4F6 /* OlaAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OlaAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5016665D238A72E7002CA4F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5016665F238A72E7002CA4F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		50166661238A72E7002CA4F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50166664238A72E7002CA4F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50166667238A72E7002CA4F6 /* OlaAssignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OlaAssignment.xcdatamodel; sourceTree = "<group>"; };
+		50166669238A72E9002CA4F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5016666C238A72E9002CA4F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5016666E238A72E9002CA4F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50166673238A72E9002CA4F6 /* OlaAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OlaAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50166677238A72E9002CA4F6 /* OlaAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlaAssignmentTests.swift; sourceTree = "<group>"; };
+		50166679238A72E9002CA4F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50166687238A7340002CA4F6 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		50166688238A7340002CA4F6 /* ErrorResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
+		5016668A238A7340002CA4F6 /* NetworkingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		5016668B238A7340002CA4F6 /* WebServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceProtocol.swift; sourceTree = "<group>"; };
+		5016668C238A7340002CA4F6 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		5016668F238A7340002CA4F6 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		5016669A238A74E1002CA4F6 /* WeatherListHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListHandlerProtocol.swift; sourceTree = "<group>"; };
+		5016669D238A7621002CA4F6 /* WeatherDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetail.swift; sourceTree = "<group>"; };
+		5016669F238A7621002CA4F6 /* WeatherInfo+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WeatherInfo+Model.swift"; sourceTree = "<group>"; };
+		501666A0238A7621002CA4F6 /* WeatherInfo+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WeatherInfo+Parser.swift"; sourceTree = "<group>"; };
+		501666A5238A7621002CA4F6 /* Double+Round.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
+		501666A8238A7621002CA4F6 /* WeatherTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTableCell.swift; sourceTree = "<group>"; };
+		501666AE238A7622002CA4F6 /* ManagedObject+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedObject+Utilities.swift"; sourceTree = "<group>"; };
+		501666B9238A76E2002CA4F6 /* WeatherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewController.swift; sourceTree = "<group>"; };
+		501666BB238A77A6002CA4F6 /* WeatherListViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewDatasource.swift; sourceTree = "<group>"; };
+		501666C1238A7999002CA4F6 /* WeatherListHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherListHandler.swift; sourceTree = "<group>"; };
+		501666C3238A7A02002CA4F6 /* WeatherListViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewInterface.swift; sourceTree = "<group>"; };
+		501666C5238A7A53002CA4F6 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50166657238A72E7002CA4F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50166670238A72E9002CA4F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50166651238A72E7002CA4F6 = {
+			isa = PBXGroup;
+			children = (
+				5016665C238A72E7002CA4F6 /* OlaAssignment */,
+				50166676238A72E9002CA4F6 /* OlaAssignmentTests */,
+				5016665B238A72E7002CA4F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5016665B238A72E7002CA4F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5016665A238A72E7002CA4F6 /* OlaAssignment.app */,
+				50166673238A72E9002CA4F6 /* OlaAssignmentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5016665C238A72E7002CA4F6 /* OlaAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				50166682238A72F3002CA4F6 /* AppDelegate */,
+				5016669C238A7621002CA4F6 /* APIModel */,
+				501666AD238A7622002CA4F6 /* CoreData */,
+				5016669E238A7621002CA4F6 /* DataModel */,
+				501666A4238A7621002CA4F6 /* Extension */,
+				501666A6238A7621002CA4F6 /* View */,
+				501666A1238A7621002CA4F6 /* ViewModel */,
+				50166685238A7340002CA4F6 /* Service */,
+				50166699238A74C5002CA4F6 /* APIHandler */,
+				50166697238A7490002CA4F6 /* Controller */,
+				50166683238A7308002CA4F6 /* Storyboard */,
+				5016666E238A72E9002CA4F6 /* Info.plist */,
+				50166666238A72E7002CA4F6 /* OlaAssignment.xcdatamodeld */,
+				50166669238A72E9002CA4F6 /* Assets.xcassets */,
+			);
+			path = OlaAssignment;
+			sourceTree = "<group>";
+		};
+		50166676238A72E9002CA4F6 /* OlaAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				50166677238A72E9002CA4F6 /* OlaAssignmentTests.swift */,
+				50166679238A72E9002CA4F6 /* Info.plist */,
+			);
+			path = OlaAssignmentTests;
+			sourceTree = "<group>";
+		};
+		50166682238A72F3002CA4F6 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5016665D238A72E7002CA4F6 /* AppDelegate.swift */,
+				5016665F238A72E7002CA4F6 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		50166683238A7308002CA4F6 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				50166663238A72E7002CA4F6 /* Main.storyboard */,
+				5016666B238A72E9002CA4F6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		50166685238A7340002CA4F6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				50166686238A7340002CA4F6 /* Result */,
+				50166689238A7340002CA4F6 /* Networking */,
+				5016668E238A7340002CA4F6 /* APIManager */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		50166686238A7340002CA4F6 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				50166687238A7340002CA4F6 /* Result.swift */,
+				50166688238A7340002CA4F6 /* ErrorResult.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		50166689238A7340002CA4F6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5016668A238A7340002CA4F6 /* NetworkingError.swift */,
+				5016668B238A7340002CA4F6 /* WebServiceProtocol.swift */,
+				5016668C238A7340002CA4F6 /* WebService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5016668E238A7340002CA4F6 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				5016668F238A7340002CA4F6 /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		50166697238A7490002CA4F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50166698238A7498002CA4F6 /* WeatherListController */,
+				50166661238A72E7002CA4F6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		50166698238A7498002CA4F6 /* WeatherListController */ = {
+			isa = PBXGroup;
+			children = (
+				501666B9238A76E2002CA4F6 /* WeatherListViewController.swift */,
+				501666BB238A77A6002CA4F6 /* WeatherListViewDatasource.swift */,
+				501666C3238A7A02002CA4F6 /* WeatherListViewInterface.swift */,
+			);
+			path = WeatherListController;
+			sourceTree = "<group>";
+		};
+		50166699238A74C5002CA4F6 /* APIHandler */ = {
+			isa = PBXGroup;
+			children = (
+				501666C1238A7999002CA4F6 /* WeatherListHandler.swift */,
+				5016669A238A74E1002CA4F6 /* WeatherListHandlerProtocol.swift */,
+			);
+			path = APIHandler;
+			sourceTree = "<group>";
+		};
+		5016669C238A7621002CA4F6 /* APIModel */ = {
+			isa = PBXGroup;
+			children = (
+				5016669D238A7621002CA4F6 /* WeatherDetail.swift */,
+			);
+			path = APIModel;
+			sourceTree = "<group>";
+		};
+		5016669E238A7621002CA4F6 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				5016669F238A7621002CA4F6 /* WeatherInfo+Model.swift */,
+				501666A0238A7621002CA4F6 /* WeatherInfo+Parser.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		501666A1238A7621002CA4F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				501666C5238A7A53002CA4F6 /* WeatherListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		501666A4238A7621002CA4F6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				501666A5238A7621002CA4F6 /* Double+Round.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		501666A6238A7621002CA4F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				501666A7238A7621002CA4F6 /* TableCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		501666A7238A7621002CA4F6 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				501666A8238A7621002CA4F6 /* WeatherTableCell.swift */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		501666AD238A7622002CA4F6 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				501666AE238A7622002CA4F6 /* ManagedObject+Utilities.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50166659238A72E7002CA4F6 /* OlaAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5016667C238A72E9002CA4F6 /* Build configuration list for PBXNativeTarget "OlaAssignment" */;
+			buildPhases = (
+				50166656238A72E7002CA4F6 /* Sources */,
+				50166657238A72E7002CA4F6 /* Frameworks */,
+				50166658238A72E7002CA4F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OlaAssignment;
+			productName = OlaAssignment;
+			productReference = 5016665A238A72E7002CA4F6 /* OlaAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50166672238A72E9002CA4F6 /* OlaAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5016667F238A72E9002CA4F6 /* Build configuration list for PBXNativeTarget "OlaAssignmentTests" */;
+			buildPhases = (
+				5016666F238A72E9002CA4F6 /* Sources */,
+				50166670238A72E9002CA4F6 /* Frameworks */,
+				50166671238A72E9002CA4F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50166675238A72E9002CA4F6 /* PBXTargetDependency */,
+			);
+			name = OlaAssignmentTests;
+			productName = OlaAssignmentTests;
+			productReference = 50166673238A72E9002CA4F6 /* OlaAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50166652238A72E7002CA4F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Rajanikant shukla";
+				TargetAttributes = {
+					50166659238A72E7002CA4F6 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					50166672238A72E9002CA4F6 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 50166659238A72E7002CA4F6;
+					};
+				};
+			};
+			buildConfigurationList = 50166655238A72E7002CA4F6 /* Build configuration list for PBXProject "OlaAssignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50166651238A72E7002CA4F6;
+			productRefGroup = 5016665B238A72E7002CA4F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50166659238A72E7002CA4F6 /* OlaAssignment */,
+				50166672238A72E9002CA4F6 /* OlaAssignmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50166658238A72E7002CA4F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5016666D238A72E9002CA4F6 /* LaunchScreen.storyboard in Resources */,
+				5016666A238A72E9002CA4F6 /* Assets.xcassets in Resources */,
+				50166665238A72E7002CA4F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50166671238A72E9002CA4F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50166656238A72E7002CA4F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50166694238A7340002CA4F6 /* WebService.swift in Sources */,
+				501666C4238A7A02002CA4F6 /* WeatherListViewInterface.swift in Sources */,
+				50166662238A72E7002CA4F6 /* ViewController.swift in Sources */,
+				50166690238A7340002CA4F6 /* Result.swift in Sources */,
+				50166696238A7340002CA4F6 /* APIManager.swift in Sources */,
+				501666C6238A7A53002CA4F6 /* WeatherListViewModel.swift in Sources */,
+				5016665E238A72E7002CA4F6 /* AppDelegate.swift in Sources */,
+				501666BA238A76E2002CA4F6 /* WeatherListViewController.swift in Sources */,
+				50166692238A7340002CA4F6 /* NetworkingError.swift in Sources */,
+				501666B8238A7622002CA4F6 /* ManagedObject+Utilities.swift in Sources */,
+				501666B0238A7622002CA4F6 /* WeatherInfo+Model.swift in Sources */,
+				50166693238A7340002CA4F6 /* WebServiceProtocol.swift in Sources */,
+				50166691238A7340002CA4F6 /* ErrorResult.swift in Sources */,
+				501666B5238A7622002CA4F6 /* WeatherTableCell.swift in Sources */,
+				5016669B238A74E1002CA4F6 /* WeatherListHandlerProtocol.swift in Sources */,
+				501666AF238A7622002CA4F6 /* WeatherDetail.swift in Sources */,
+				50166660238A72E7002CA4F6 /* SceneDelegate.swift in Sources */,
+				50166668238A72E7002CA4F6 /* OlaAssignment.xcdatamodeld in Sources */,
+				501666B4238A7622002CA4F6 /* Double+Round.swift in Sources */,
+				501666B1238A7622002CA4F6 /* WeatherInfo+Parser.swift in Sources */,
+				501666BC238A77A6002CA4F6 /* WeatherListViewDatasource.swift in Sources */,
+				501666C2238A7999002CA4F6 /* WeatherListHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5016666F238A72E9002CA4F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50166678238A72E9002CA4F6 /* OlaAssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50166675238A72E9002CA4F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50166659238A72E7002CA4F6 /* OlaAssignment */;
+			targetProxy = 50166674238A72E9002CA4F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50166663238A72E7002CA4F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50166664238A72E7002CA4F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5016666B238A72E9002CA4F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5016666C238A72E9002CA4F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5016667A238A72E9002CA4F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5016667B238A72E9002CA4F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5016667D238A72E9002CA4F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OlaAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajanikants.OlaAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5016667E238A72E9002CA4F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OlaAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajanikants.OlaAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50166680238A72E9002CA4F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OlaAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajanikants.OlaAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OlaAssignment.app/OlaAssignment";
+			};
+			name = Debug;
+		};
+		50166681238A72E9002CA4F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OlaAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajanikants.OlaAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OlaAssignment.app/OlaAssignment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50166655238A72E7002CA4F6 /* Build configuration list for PBXProject "OlaAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5016667A238A72E9002CA4F6 /* Debug */,
+				5016667B238A72E9002CA4F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5016667C238A72E9002CA4F6 /* Build configuration list for PBXNativeTarget "OlaAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5016667D238A72E9002CA4F6 /* Debug */,
+				5016667E238A72E9002CA4F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5016667F238A72E9002CA4F6 /* Build configuration list for PBXNativeTarget "OlaAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50166680238A72E9002CA4F6 /* Debug */,
+				50166681238A72E9002CA4F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		50166666238A72E7002CA4F6 /* OlaAssignment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				50166667238A72E7002CA4F6 /* OlaAssignment.xcdatamodel */,
+			);
+			currentVersion = 50166667238A72E7002CA4F6 /* OlaAssignment.xcdatamodel */;
+			path = OlaAssignment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 50166652238A72E7002CA4F6 /* Project object */;
+}
